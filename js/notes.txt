@@ -1,0 +1,14 @@
+let arr = [
+    { a: 1, b: 2 },
+    { c: 1, b: 3 },
+    { a: 2, b: 5 },
+    { a: 3, b: 6 },
+    { a: 0, b: 1 }
+];
+
+let arr1 = arr
+    .filter((obj) => obj.a >= 0) 
+    .map((obj) => obj.b * 2) 
+    .reduce((value, obj) => value + obj, 0);
+
+console.log(arr1);
