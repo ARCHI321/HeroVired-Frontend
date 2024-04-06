@@ -1,0 +1,13 @@
+<h2>Add Expense</h2>
+<form>
+  <label>Description: </label>
+  <input [(ngModel)]="newExpense.description" name="description" required />
+
+  <label>Amount: </label>
+  <input [(ngModel)]="newExpense.amount" name="amount" type="number" required />
+
+  <label>Date: </label>
+  <input [(ngModel)]="newExpense.date" name="date" type="date" required />
+
+  <button (click)="addExpense()">Add Expense</button>
+</form>

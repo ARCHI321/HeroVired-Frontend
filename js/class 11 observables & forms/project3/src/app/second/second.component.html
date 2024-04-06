@@ -1,0 +1,9 @@
+<!-- {{ name }} <button (click)="handleTrigger()">Trigger</button> -->
+
+Second works!!
+<!-- <app-third [data]="value" (emitValue)="handleValue()"></app-third> -->
+
+<app-third [data]="value" [data2]="obj">
+  <app-fourth></app-fourth>
+</app-third>
+<button (click)="handleValue()">Click Me</button>

@@ -1,0 +1,21 @@
+<div class="tooltip-container">
+  <input
+    type="text"
+    [value]="data"
+    [title]="data"
+    [ngbTooltip]="data"
+    [disableTooltip]="!isTooltipEnabled()"
+    (change)="onInputChange($event)"
+    container="body"
+    [placement]="'bottom'"
+  />
+</div>
+
+<!-- <div class="tooltip-container">
+  <input
+    type="text"
+    [ngbTooltip]="tooltipContent"
+    [tooltipDisabled]="!isTooltipEnabled()"
+    container="body"
+  />
+</div> -->

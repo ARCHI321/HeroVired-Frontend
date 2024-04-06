@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ manga.name }}</h5>
+    <!-- <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p> -->
+    <!-- <a [attr.href]="'read-manga/' + manga.id" class="btn btn-primary">Read</a> -->
+    <!-- <a routerLink="read-manga" class="btn btn-primary">Read</a> -->
+
+    <!-- one fragment at a time -->
+    <a
+      [routerLink]="['/read-manga', manga.id]"
+      [queryParams]="{ mangaId: manga.id }"
+      [fragment]="'section1'"
+      class="btn btn-primary"
+      >Read</a
+    >
+    <!-- <button (click)="handleReadManga(manga.id)" class="btn btn-primary"> -->
+    <!-- Read -->
+    <!-- </button> -->
+  </div>
+</div>

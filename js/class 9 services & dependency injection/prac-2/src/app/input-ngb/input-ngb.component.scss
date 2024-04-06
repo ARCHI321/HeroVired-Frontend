@@ -1,0 +1,16 @@
+// div {
+//     padding: 20px;
+//   }
+
+
+  .tooltip-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .tooltip-container input{
+    padding: 0 20px;
+    width: 100px;
+  }

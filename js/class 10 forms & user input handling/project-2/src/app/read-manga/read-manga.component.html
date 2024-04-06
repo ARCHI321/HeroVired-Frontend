@@ -1,0 +1,8 @@
+<!-- <a [routerLink]="['/read-manga']" class="btn btn-primary">Read</a>
+<app-card [manga]="manga"></app-card> -->
+
+<div class="container bg-dark">
+  <div class="" *ngFor="let item of arr; let i = index; s">
+    <a class="text-white" [routerLink]="['/read-manga', item]">item</a>
+  </div>
+</div>
